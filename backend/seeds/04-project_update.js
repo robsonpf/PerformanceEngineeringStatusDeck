@@ -7,12 +7,12 @@ exports.seed = function(knex) {
       return knex('project_update').insert([
         {
           id: 0,
-          projects_id: 0,
+          project_id: 0,
           detail: 'Two rounds of Peak load tests completed',
         },
         {
           id: 1,
-          projects_id: 0,
+          project_id: 0,
           detail: 'Endurance test completed on 05/28. Results are being collated',
         }
       ]);

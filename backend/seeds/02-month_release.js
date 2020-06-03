@@ -8,8 +8,7 @@ exports.seed = function(knex) {
         {
           id: 0,
           month: 'June',
-          slide_id: 0,
-          project_id: 0
+          slide_id: 0
         }
       ]);
     });

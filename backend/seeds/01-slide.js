@@ -6,8 +6,7 @@ exports.seed = function(knex) {
       // Inserts seed entries
       return knex('slide').insert([
         {
-          id: 0,
-          month_release_id: 0
+          id: 0
        }
       ]);
     });

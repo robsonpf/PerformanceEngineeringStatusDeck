@@ -16,8 +16,7 @@ exports.seed = function(knex) {
             execution: false,
             completion: '0%',
             test_complete_date: '6/01',
-            release_date: '6/11',
-            project_update_id: 0
+            release_date: '6/11'
           }
       ]);
     });
