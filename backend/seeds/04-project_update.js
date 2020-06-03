@@ -6,15 +6,15 @@ exports.seed = function(knex) {
       // Inserts seed entries
       return knex('project_update').insert([
         {
+          id: 0,
+          projects_id: 0,
+          detail: 'Two rounds of Peak load tests completed',
+        },
+        {
           id: 1,
-          project_id: 1,
-          update: 'Two rounds of Peak load tests completed'
-       },
-       {
-         id: 2,
-         project_id: 1,
-         update: 'Pending: Endurance test – ETC-5/26 '
-      }
+          projects_id: 0,
+          detail: 'Endurance test completed on 05/28. Results are being collated',
+        }
       ]);
     });
 };

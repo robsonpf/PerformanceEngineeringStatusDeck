@@ -4,6 +4,7 @@ exports.up = function(knex) {
     table.increments("id")
     table.integer("slide_id")
     table.string("month")
+    table.foreign("project_id")
   })
 };
 

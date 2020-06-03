@@ -6,15 +6,11 @@ exports.seed = function(knex) {
       // Inserts seed entries
       return knex('month_release').insert([
         {
-          id: 1,
-          slide_id: 1,
-          month: 'June'
-       },
-       {
-         id: 2,
-         slide_id: 2,
-         month_release: 'July'
-       }
+          id: 0,
+          month: 'June',
+          slide_id: 0,
+          project_id: 0
+        }
       ]);
     });
 };
