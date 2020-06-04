@@ -1,0 +1,1 @@
+const slideQuery = require("../../query/slide")
