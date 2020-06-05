@@ -3,12 +3,14 @@ const knex = require('./db')
 const getAllSlides = async () => {
   return await knex('slide')
     .select('*')
-    .orderBy('created_at', 'desc')
+    .orderBy('created_at', 'ascd')
 }
 
 const createSlide = async () => {
   return await knex('slide')
-    .insert()
+    .insert({})
+    .into('slide')
+    .returning('*')
 }
 
 
