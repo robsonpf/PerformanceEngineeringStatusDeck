@@ -10,3 +10,5 @@ router.post('/', slideController.createSlide)
 // router.get('/', slideController.getById)
 // router.put('/', slideController.putById)
 // router.update('/', slideController.updateById)
+
+module.exports = router
