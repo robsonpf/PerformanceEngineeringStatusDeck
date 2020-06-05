@@ -13,14 +13,14 @@ app.use(bodyParser.json())
 app.use(cors())
 
 const slideRoute = require("./src/routers/slide")
-const monthReleaseRoute = require("./src/routers/monthRelease")
-const projectRoute = require("./src/routers/project")
-const projectUpdateRoute = require("./src/routers/projectUpdate")
+// const monthReleaseRoute = require("./src/routers/monthRelease")
+// const projectRoute = require("./src/routers/project")
+// const projectUpdateRoute = require("./src/routers/projectUpdate")
 
 app.use("/slide", slideRoute)
-app.use("/monthRelease", monthReleaseRoute)
-app.use("/project", projectRoute)
-app.use("/projectUpdate", projectUpdateRoute)
+// app.use("/monthRelease", monthReleaseRoute)
+// app.use("/project", projectRoute)
+// app.use("/projectUpdate", projectUpdateRoute)
 
 app.use((err, req, res, next) => {
   console.error(err.stack)
