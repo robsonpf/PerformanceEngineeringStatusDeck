@@ -7,7 +7,6 @@ const db = require('./query/db')
 const cors = require('cors')
 require('dotenv').config()
 
-
 if (process.env.NODE_ENV !== 'test') app.use(morgan('dev'))
 app.use(bodyParser.json())
 app.use(cors())

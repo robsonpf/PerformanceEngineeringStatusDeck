@@ -14,6 +14,18 @@ const getAllSlides = async (req, res, next) => {
   }
 };
 
+const createSlide = async (req, res, next) => {
+  try {
+    const slides = await models.createSlide(req.body);
+
+    req.status(201).json(slides)
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+
 module.exports = {
-  getAllSlides
+  getAllSlides,
+  createSlide
 }

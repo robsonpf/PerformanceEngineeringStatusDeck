@@ -11,13 +11,22 @@ const getAllSlides = async (body) => {
         message: "There are no slides"
       }
     }
-
     return slides
   } catch (error) {
     console.log(error)
   }
 };
 
+
+const createSlide = async (body) => {
+  try {
+    return await slideQuery.createSlide(body)
+  } catch (error) {
+    console.log(error)
+  }
+};
+
 module.exports = {
-  getAllSlides
+  getAllSlides,
+  createSlide
 }

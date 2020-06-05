@@ -6,6 +6,11 @@ const getAllSlides = async () => {
     .orderBy('create_at', 'desc')
 }
 
+const createSlide = async () => {
+  return await knex('slide')
+    .insert()
+}
+
 
 
 // const getAllSlides = async () => {
@@ -13,6 +18,9 @@ const getAllSlides = async () => {
 // }
 
 
+
+
 module.exports = {
-  getAllSlides
+  getAllSlides,
+  createSlide
 }
