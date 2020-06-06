@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+html,
+body,
+.App,
+#root {
+  height: 100%;
+}
+
+.mb-space-s {
+  margin-bottom: 15px;
+}
+
+.mb-space-m {
+  margin-bottom: 30px;
+}
+
+.mb-space-l {
+  margin-bottom: 40px;
+}

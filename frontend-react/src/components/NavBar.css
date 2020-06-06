@@ -1,0 +1,15 @@
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  margin: 0 15px;
+}
+
+.slide-buttons {
+  font-size: 20px;
+  min-width: 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
