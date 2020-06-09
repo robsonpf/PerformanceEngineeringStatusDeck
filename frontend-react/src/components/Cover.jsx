@@ -4,7 +4,8 @@ import { connect, } from 'react-redux';
 import './Cover.css';
 import pes from '../images/PES.png';
 
-const Cover = () => {
+const Cover = (props) => {
+  console.log(props);
   useEffect(() => {
     // change background color when Cover component has mounted
     const body = document.querySelector('body');
@@ -15,7 +16,7 @@ const Cover = () => {
     <div id="cover">
       <div className="header mb-space-l">Performance Engineering Status</div>
       <marquee behavior="scroll" bgcolor="#E20074" loop="-1" width="30%">
-        <h1 style={{ color: 'white' }}> 
+        <h1 style={{ color: 'white' }}>
           As of
           <span id="today"> *UPDATE THE DAY HERE*</span>
         </h1>
