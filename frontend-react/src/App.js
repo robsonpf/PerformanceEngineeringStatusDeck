@@ -10,14 +10,12 @@ import Slide from './components/Slide';
 import './App.css';
 import 'semantic-ui-css/semantic.min.css';
 
-const App = () => {
+const App = (props) => {
   return (
     <div className="App">
-      <NavBar />
-      <Router>
-        <Route exact path="/" component={Cover} />
-        <Route path="/slide/:page" component={Slide} />
-      </Router>
+      <NavBar history={props.history}/>
+      <Route exact path="/" component={Cover} />
+      <Route path="/slide/:page" component={Slide} />
     </div>
   );
 }
