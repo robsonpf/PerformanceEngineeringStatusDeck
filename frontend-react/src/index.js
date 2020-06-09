@@ -6,11 +6,13 @@ import {
   Route,
 } from 'react-router-dom';
 import store from './redux/store';
+import { fetchSlides, } from './redux/actions/slide'
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 const storeInstance = store();
+storeInstance.dispatch(fetchSlides())
 
 ReactDOM.render(
   <React.StrictMode>

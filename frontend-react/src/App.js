@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-} from 'react-router-dom';
-
+import { Route, } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Cover from './components/Cover';
 import Slide from './components/Slide';
