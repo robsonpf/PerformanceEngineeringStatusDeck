@@ -1,37 +1,41 @@
-import React, { useState, } from 'react';
+import React, { useState, useEffect, } from 'react';
 import { connect, } from 'react-redux';
 import { bindActionCreators, } from  'redux';
 import { Button, Dropdown, } from 'semantic-ui-react';
 import { createSlide, } from '../redux/actions/slide';
+import DropdownItemList from './DropdownItemList';
 import './NavBar.css';
 import tmo from '../images/TMO_LOGO.png';
 
 const NavBar = (props) => {
-  console.log(props);
-  const { createSlide } = props;
-  const handleSlide = () => {
-    console.log('handleSlide'
-    // createSlide
-  );
-  }
+  const { createSlide, history, slides } = props;
 
   return (
     <div id="navbar">
       <img src={tmo} alt="T-Mobile" />
       <div className="slide-buttons">
-        <Button onClick={() => createSlide()} content="Add Slide" />
+        <Button onClick={() => createSlide(history)} content="Add Slide" />
         <Dropdown
-          text="Slides"
-        button>
-
+          button
+          selection
+          text="Slides">
+            <Dropdown.Menu>
+              <DropdownItemList slides={slides} />
+            </Dropdown.Menu>
         </Dropdown>
       </div>
     </div>
   );
 };
 
+const mapStateToProps = (state) => {
+  return {
+    slides: state.slide.slides,
+  };
+};
+
 const mapDispatchToProps = dispatch => bindActionCreators({
   createSlide
-}, dispatch)
+}, dispatch);
 
-export default connect(null, mapDispatchToProps)(NavBar);
+export default connect(mapStateToProps, mapDispatchToProps)(NavBar);
