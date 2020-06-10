@@ -1,0 +1,29 @@
+.slide-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px 10px;
+}
+
+.update {
+  background: #e20074;
+  color: white;
+  font-weight: 500;
+  width: 300px;
+  height: 45px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.horizontal-center {
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
