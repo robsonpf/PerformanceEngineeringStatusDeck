@@ -2,7 +2,7 @@ import React from 'react';
 
 const Status = (props) => {
   return (
-    <div>
+    <div id="status">
       Status component
     </div>
   );

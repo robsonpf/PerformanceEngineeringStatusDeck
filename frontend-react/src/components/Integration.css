@@ -4,3 +4,47 @@
   justify-content: space-between;
   align-items: flex-start;
 }
+
+#month-release {
+  margin-right: 5px;
+  border: 1px solid black;
+  height: 1000px;
+  width: 35%;
+  background: #fae6eb
+}
+
+#status {
+  margin: 0 5px;
+  border: 1px solid black;
+  width: 30%;
+  height: 1000px;
+}
+
+#future-release {
+  margin-left: 5px;
+  border: 1px solid black;
+  width: 30%;
+  height: 1000px;
+}
+
+.headers {
+  color: white;
+  background-color: #e20074;
+  padding: 5px 2px;
+  grid-template-columns: 10% 80% 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#details {
+  height: 80%;
+  text-align: left;
+  padding-left: 5px
+
+}
+
+#key-callouts {
+  text-align: left;
+  padding-left: 5px;
+  padding-bottom: 10px
+}
