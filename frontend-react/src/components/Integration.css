@@ -8,7 +8,7 @@
 #month-release {
   margin-right: 5px;
   border: 1px solid black;
-  height: 1000px;
+  height: 700px;
   width: 35%;
   background: #fae6eb
 }
@@ -17,14 +17,14 @@
   margin: 0 5px;
   border: 1px solid black;
   width: 30%;
-  height: 1000px;
+  height: 700px;
 }
 
 #future-release {
   margin-left: 5px;
   border: 1px solid black;
   width: 30%;
-  height: 1000px;
+  height: 700px;
 }
 
 .headers {
@@ -37,7 +37,7 @@
 }
 
 #details {
-  height: 80%;
+  height: 70%;
   text-align: left;
   padding-left: 5px
 

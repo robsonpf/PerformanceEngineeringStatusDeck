@@ -6,7 +6,7 @@ const MonthRelease = (props) => {
     <div id="month-release">
       <h3 className="headers">
         <div>
-          
+
         </div>
         <div>
           {`MONTH Release`}
@@ -23,7 +23,7 @@ const MonthRelease = (props) => {
       </h3>
       <div id="details">
         <h4 id="key-callouts">Key Callouts:</h4>
-        P&T_PO_32 Boost XP I
+        &#x25CF; P&T_PO_32 Boost XP I
       </div>
       <h3 className="headers">
         Risk & Mitigation
