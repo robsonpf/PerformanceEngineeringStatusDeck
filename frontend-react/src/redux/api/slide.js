@@ -9,3 +9,9 @@ export const postSlide = async () => {
     method: 'POST'
   })
 }
+
+export const postMonth = async () => {
+  return await fetch(`${process.env.REACT_APP_API_URL}/MonthRelease`, {
+    method:
+  })
+}

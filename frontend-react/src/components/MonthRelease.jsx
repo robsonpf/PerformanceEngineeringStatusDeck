@@ -4,8 +4,12 @@ import { Dropdown, Icon, Input } from "semantic-ui-react";
 const MonthRelease = (props) => {
   const [editSwitch, setEditSwitch] = useState(false);
 
-  const handleRenameMonth = () => {};
-  
+  const handleRenameMonth = (e) => {
+    if (e.key === "Enter") {
+
+    }
+  };
+
   return (
     <div id="month-release">
       <h3 className="headers">
@@ -13,10 +17,11 @@ const MonthRelease = (props) => {
         <div>
           {editSwitch ? (
             <div className="ui transparent input">
-              <input 
-                style={{ color: 'white', textAlign: 'center' }} 
-                placeholder="Month Name" 
-                type="text" />
+              <input
+                onKeyPress={(e) => handleRenameMonth(e)}
+                style={{ color: 'white', textAlign: 'center' }}
+                placeholder="Month Name"
+              type="text" />
             </div>
           ) : (
             `MONTH Release`

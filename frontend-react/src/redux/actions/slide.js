@@ -1,9 +1,10 @@
-import { getSlides, postSlide, } from '../api/slide';
+import { getSlides, postSlide, postMonth } from '../api/slide';
 
 export const FETCH_SLIDES_SUCCESS = 'FETCH_SLIDES_SUCCESS';
 export const FETCH_SLIDES_FAILED = 'FETCH_SLIDES_FAILED';
 export const CREATE_SLIDE_SUCCESS = 'CREATE_SLIDE_SUCCESS';
 export const CREATE_SLIDE_FAILED = 'CREATE_SLIDE_FAILED';
+
 
 export const fetchSlides = () => {
   return async dispatch => {
@@ -16,7 +17,7 @@ export const fetchSlides = () => {
         payload: slides
       })
     } catch (error) {
-      
+
     }
   };
 };
@@ -26,9 +27,10 @@ export const createSlide = (history) => {
     try {
       let response = await postSlide();
       let post = await response.json();
+      let monthResponse = await postMonth(post[0].id);
       let slideResponse = await getSlides();
       let slides = await slideResponse.json();
-      
+
       dispatch({
         type: CREATE_SLIDE_SUCCESS,
         payload: post
