@@ -1,4 +1,5 @@
 const knex = require('./db')
+// const { }
 
 const getAllSlides = async () => {
   return await knex('slide')
@@ -7,10 +8,12 @@ const getAllSlides = async () => {
 }
 
 const createSlide = async () => {
-  return await knex('slide')
+  const newSlide = await knex('slide')
     .insert({})
     .into('slide')
     .returning('*')
+  
+  const
 }
 
 
