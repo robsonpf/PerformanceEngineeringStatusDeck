@@ -6,7 +6,9 @@ const MonthRelease = (props) => {
 
   const handleRenameMonth = (e) => {
     if (e.key === "Enter") {
-
+      if (e.target.value !== "") {
+        
+      }
     }
   };
 

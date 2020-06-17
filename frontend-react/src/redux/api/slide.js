@@ -10,8 +10,12 @@ export const postSlide = async () => {
   })
 }
 
-export const postMonth = async () => {
+export const postMonth = async (id) => {
   return await fetch(`${process.env.REACT_APP_API_URL}/MonthRelease`, {
-    method:
+    method: 'POST',
+    body: JSON.stringify({ id }),
+    headers: {
+      'Content-Type': 'application/json'
+    }
   })
 }
